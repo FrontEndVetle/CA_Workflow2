@@ -1,0 +1,31 @@
+{
+  "name": "automatepractical",
+  "version": "1.0.0",
+  "description": "Noroff CA workflow 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrontEndVetle/CA_Workflow2.git"
+  },
+  "keywords": [
+    "CA"
+  ],
+  "author": "Eilert Førland",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrontEndVetle/CA_Workflow2/issues"
+  },
+  "homepage": "https://github.com/FrontEndVetle/CA_Workflow2#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^4.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp-imagemin": "^7.1.0"
+  }
+}

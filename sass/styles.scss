@@ -1,0 +1,758 @@
+/*reset styling*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+
+/*colors
+ Color Theme Swatches in Hex
+.Dirty-bicycle-cut-for-white-isolated.-1-hex { color: #F27B13; }
+.Dirty-bicycle-cut-for-white-isolated.-2-hex { color: #BF4904; }
+.Dirty-bicycle-cut-for-white-isolated.-3-hex { color: #F26B1D; }
+.Dirty-bicycle-cut-for-white-isolated.-4-hex { color: #F2F2F2; }
+.Dirty-bicycle-cut-for-white-isolated.-5-hex { color: #262626; }
+
+ Color Theme Swatches in RGBA
+.Dirty-bicycle-cut-for-white-isolated.-1-rgba { color: rgba(242, 123, 19, 1); }
+.Dirty-bicycle-cut-for-white-isolated.-2-rgba { color: rgba(191, 72, 3, 1); }
+.Dirty-bicycle-cut-for-white-isolated.-3-rgba { color: rgba(242, 107, 29, 1); }
+.Dirty-bicycle-cut-for-white-isolated.-4-rgba { color: rgba(242, 242, 242, 1); }
+.Dirty-bicycle-cut-for-white-isolated.-5-rgba { color: rgba(38, 38, 38, 1); }
+
+
+*/
+
+
+/*general styles*/
+
+* {
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.active {
+    font-weight: bolder;
+}
+
+#mainNav a:hover {
+    color: rgb(150, 150, 160);
+}
+
+body {
+    background-color: rgba(242, 242, 242, 1);
+}
+
+header {
+    background-color: rgba(242, 123, 19, 1);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+}
+
+header .header-home {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 900;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 20px;
+}
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header nav ul li {
+    display: inline-block;
+    float: left;
+    padding: 0 5px;
+}
+
+header nav ul li a {
+    font-size: 9px;
+    color: #fff;
+}
+
+
+/*index styling*/
+
+p {
+    font-size: 9px;
+    margin: 5px 10px;
+    line-height: 13px;
+    color: #fff;
+}
+
+.banner-index {
+    width: 100%;
+    height: 100vh;
+    max-height: 200px;
+    background-image: url(../images/countryside.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+
+/*index box styling*/
+
+.indexBoxes div {
+    margin: 15px 15px 0;
+    width: calc(100% - 30px);
+    background-color: #242426;
+    text-align: center;
+    border: 1px black solid;
+}
+
+.indexBoxes div h3 {
+    font-size: 15px;
+    color: #fff;
+    text-shadow: 10px 10px 10px #111;
+    padding: 5px;
+    background-color: #F27B13;
+    box-shadow: 0px 2px 3px 1px black;
+}
+
+
+/*styles indexBox1*/
+
+.indexBox1 {
+    height: 130px;
+    overflow: auto;
+}
+
+.indexBox2 {
+    height: 170px;
+    background-image: url(../images/happycycling.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.indexBox3 {
+    height: 170px;
+    background-image: url(../images/3guysurban.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.indexBox4 {
+    height: 170px;
+    background-image: url(../images/bikeguide.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.indexBox5 {
+    height: 190px;
+    overflow: auto;
+}
+
+
+/*styles indexBox2*/
+
+.indexBox2 {
+    height: 120px;
+}
+
+
+/*footer*/
+
+footer {
+    width: calc(100%-60px);
+    padding: 40px 30px;
+    background-color: rgba(242, 123, 19, 1);
+    padding-top: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+footer ul li {
+    float: left;
+    width: fit-content;
+    padding-left: 20px;
+}
+
+footer ul li {
+    list-style: none;
+    font-size: 8px;
+    color: #fff;
+    line-height: 3px;
+    margin: 2px;
+}
+
+.footerMeny {
+    float: left;
+}
+
+footer ul li a {
+    font-size: 100%;
+    color: #fff;
+    line-height: 40px;
+}
+
+.footerIcons img {
+    width: 20px;
+    margin-right: 5px;
+    clear: left;
+}
+
+
+/* Contact Form*/
+
+.order {
+    background-color: #F26B1D;
+    ;
+    width: 70%;
+    margin: 100px auto;
+    border-radius: 10px;
+    padding: 20px;
+    border: solid black 2px;
+}
+
+.order h2 {
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+#order {
+    text-align: center;
+    margin: 0 2px;
+}
+
+.box {
+    width: 90%;
+    height: 20px;
+    border-radius: 5px;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+textarea {
+    width: 90%;
+    height: 120px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+label {
+    font-size: 15px;
+    color: #fff;
+}
+
+.botton {
+    color: #F9F6CB;
+    background-color: #FB3954;
+    width: 90%;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: solid darkred 3px;
+}
+
+
+/*tours Styling*/
+
+.indexBoxes div {
+    margin: 15px 15px 0;
+    width: calc(100% - 30px);
+    background-color: #242426;
+    text-align: center;
+    border: 1px black solid;
+}
+
+.indexBoxes div h3 {
+    font-size: 15px;
+    color: #fff;
+    text-shadow: 10px 10pxx 10px #111;
+    padding-top: 10px;
+    background-color: #F27B13;
+}
+
+.tourBox1 {
+    height: 170px;
+}
+
+.tourBox2 {
+    height: 170px;
+    background-image: url(../images/floienTour.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.tourBox3 {
+    height: 170px;
+}
+
+div .tourBox3 {
+    margin-bottom: 40px;
+}
+
+.tourBox4 {
+    height: 170px;
+    background-image: url(../images/historyTour.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.tourBox5 {
+    height: 170px;
+}
+
+div .tourBox5 {
+    margin-bottom: 40px;
+}
+
+.tourBox6 {
+    height: 170px;
+    background-image: url(../images/cityTour2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.tourBox7 {
+    height: 170px;
+}
+
+div .tourBox7 {
+    margin-bottom: 40px;
+}
+
+
+/*Style About us page*/
+
+.aboutImage {
+    width: 40%;
+    float: right;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+
+/*desktop styles*/
+
+@media only screen and (min-width: 900px) {
+    div .tourBox1 {
+        margin-bottom: 2000px;
+    }
+    div .tourBox8 {
+        margin-bottom: 50px;
+    }
+    .wrapper {
+        width: 900px;
+        margin: 0 auto;
+    }
+    /*header and nav*/
+    header .header-home {
+        font-size: 30px;
+        margin: 0 auto;
+        padding: 20px 20px;
+        float: left;
+    }
+    header nav ul {
+        display: block;
+        margin: 25px auto;
+        text-align: center;
+    }
+    header nav ul li a {
+        font-size: 14px;
+        padding: 0px 30px;
+    }
+    .logo {
+        width: 30px;
+    }
+    .banner-index {
+        width: 100%;
+        height: 100vh;
+        max-height: 350px;
+        background-image: url(../images/countryside.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: table;
+    }
+    /*style main and boxes*/
+    p {
+        font-size: 15px;
+        margin: 20px 20px;
+        line-height: 25px
+    }
+    .indexBoxes div {
+        margin: 30px 15px 0;
+        width: 40%;
+        text-align: center;
+        float: left;
+    }
+    .indexBoxes div h3 {
+        font-size: 17px;
+        text-shadow: 2px 2x 2px #111;
+        padding: 5px;
+    }
+    /*syles indexBox1*/
+    .indexBox1 {
+        height: 200px;
+    }
+    .indexBox2 {
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+    .indexBox3 {
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .indexBox4 {
+        height: 200px;
+        background-image: url(../images/bikeguide.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .indexBox5 {
+        height: 200px;
+        background-color: grey;
+    }
+    div .indexBox5 {
+        width: 83.5%;
+        margin-bottom: 30px;
+    }
+    /*styles desktop tour*/
+    div .tourBox1 {
+        height: 130px;
+        width: 83.5%;
+    }
+    /*footer*/
+    footer {
+        clear: both;
+    }
+    footer ul li {
+        display: inline-block;
+        list-style: none;
+        font-size: 17px;
+        color: #fff;
+        line-height: 20px;
+        margin-left: 90px;
+        float: left;
+    }
+    footer ul li a {
+        font-size: 100%;
+        color: #fff;
+        line-height: 40px;
+    }
+    .footerIcons img {
+        width: 30px;
+        margin-right: 10px;
+    }
+    /* Contact Form*/
+    .order {
+        background-color: #F26B1D;
+        ;
+        width: 50%;
+        margin: 100px auto;
+        border-radius: 10px;
+        padding: 20px;
+        border: solid black 2px;
+    }
+    .order h2 {
+        text-align: center;
+        margin: 30px;
+        font-size: 25px;
+    }
+    #order {
+        text-align: center;
+        margin: 0 2px;
+    }
+    .box {
+        width: 40%;
+        height: 20px;
+        border-radius: 5px;
+        margin-bottom: 10%;
+        margin-top: 5%;
+    }
+    textarea {
+        width: 50%;
+        height: 200px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        resize: none;
+    }
+    label {
+        font-size: 18px;
+    }
+    .botton {
+        color: #F9F6CB;
+        background-color: #FB3954;
+        width: 40%;
+        height: 40px;
+        font-size: 18px;
+        border-radius: 10px;
+        border: solid darkred 3px;
+    }
+}
+
+
+/*tablet*/
+
+@media only screen and (min-width: 500px) and (max-width: 899px) {
+    .wrapper {
+        width: 500px;
+        margin: 0 auto;
+    }
+    /*header and nav*/
+    header .header-home {
+        font-size: 20px;
+        margin: 0 auto;
+        padding: 10px 4px;
+        float: left;
+    }
+    header nav ul {
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+    }
+    header nav ul li a {
+        font-size: 12px;
+        padding: 0px 1px;
+    }
+    .logo {
+        width: 30px;
+    }
+    .banner-index {
+        width: 100%;
+        height: 100vh;
+        max-height: 350px;
+        background-image: url(../images/countryside.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: table;
+    }
+    /*style main and boxes*/
+    p {
+        font-size: 15px;
+        margin: 20px 20px;
+        line-height: 25px
+    }
+    .indexBoxes div {
+        margin: 30px 15px 0;
+        width: 40%;
+        text-align: center;
+        float: left;
+    }
+    .indexBoxes div h3 {
+        font-size: 17px;
+        text-shadow: 2px 2x 2px #111;
+        padding: 5px;
+    }
+    /*syles indexBox1*/
+    .indexBox1 {
+        height: 200px;
+    }
+    .indexBox2 {
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+    .indexBox3 {
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .indexBox4 {
+        height: 200px;
+        background-image: url(../images/bikeguide.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .indexBox5 {
+        height: 200px;
+        background-color: grey;
+    }
+    div .indexBox5 {
+        width: 83.5%;
+        margin-bottom: 30px;
+    }
+    /*styles desktop tour*/
+    div .tourBox1 {
+        height: 130px;
+        width: 83.5%;
+    }
+    /*footer*/
+    footer {
+        clear: both;
+    }
+    footer ul li {
+        display: inline-block;
+        list-style: none;
+        font-size: 13px;
+        color: #fff;
+        line-height: 20px;
+        margin-left: 10px;
+        float: left;
+    }
+    footer ul li a {
+        font-size: 100%;
+        color: #fff;
+        line-height: 40px;
+    }
+    .footerIcons img {
+        width: 20px;
+        margin-right: 20px;
+    }
+    /* Contact Form*/
+    .order {
+        background-color: #F26B1D;
+        ;
+        width: 80%;
+        margin: 100px auto;
+        border-radius: 10px;
+        padding: 20px;
+        border: solid black 2px;
+    }
+    .order h2 {
+        text-align: center;
+        margin: 30px;
+        font-size: 25px;
+    }
+    #order {
+        text-align: center;
+        margin: 0 2px;
+    }
+    .box {
+        width: 40%;
+        height: 20px;
+        border-radius: 5px;
+        margin-bottom: 10%;
+        margin-top: 5%;
+    }
+    textarea {
+        width: 50%;
+        height: 200px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        resize: none;
+    }
+    label {
+        font-size: 18px;
+    }
+    .botton {
+        color: #F9F6CB;
+        background-color: #FB3954;
+        width: 40%;
+        height: 40px;
+        font-size: 18px;
+        border-radius: 10px;
+        border: solid darkred 3px;
+    }
+}
